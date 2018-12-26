@@ -1,0 +1,36 @@
+extends layout
+
+block content
+    div
+        h1 用户详情
+
+        div
+            div
+                p.infoname 用户名:
+                
+                p.info!= user.username
+
+            div
+                p.infoname 学号:
+                
+                p.info!= user.sid
+
+            div
+                p.infoname 电话:
+            
+                p.info!= user.phone
+            
+            div
+                p.infoname 邮箱:
+                
+                p.info!= user.email
+
+            a.switch(href="/signout") 退出
+
+            if warning
+                div.warningBox
+                    p!= warning
+            
+
+block cssAndJs                
+    link(rel='stylesheet', href='/stylesheets/detilStyle.css')

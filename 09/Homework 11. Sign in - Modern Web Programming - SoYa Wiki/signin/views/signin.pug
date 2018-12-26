@@ -1,0 +1,30 @@
+extends layout
+
+block content
+    div
+        div
+            h1 用户登陆
+            form(method="post")
+                div.username
+                    label(for="username") 用户名
+                    input(id="username" name="username")
+                    span.error
+
+                div.password
+                    label(for="password") 密码
+                    input(id="password" name="password"  type='password')
+                    span.error
+
+                div.buttons
+                    input.button.reset(type="reset" value = "清除")
+                    input.button.submit(type="submit" value = "登陆")
+                    a.switch(href="/regist") 注册
+        
+        if error
+            div.errorBox
+                p!= error
+
+block cssAndJs                
+    //- script(type="text/javascript" src="/javascripts/signup.js")
+    //- script(type="text/javascript" src="/javascripts/validator.js")
+    link(rel='stylesheet', href='/stylesheets/signinStyle.css')

@@ -1,0 +1,34 @@
+/*Name：何泽豪 下午12组*/
+/*All five of the extra features have been completed*/
+/*Cascading Style Sheets for index.html*/
+body{
+    background: white url("img/silverware.jpg") repeat;
+}
+p {
+    color:  #404040;
+    font-family: Georgia, Garamond, serif;
+    font-size: 22pt;
+    text-align: center;
+}
+a{
+    color: #A4A400;
+}
+h1,h2{
+    color: #A4A400;
+    background: #F0F0F0;
+    font-family: "Century Gothic", "Futura", Verdana, sans-serif;
+    text-decoration: underline;
+    font-size: 44pt;
+    font-weight: bold;
+    text-align: center;
+}
+h2{
+    font-size: 28pt;
+}
+#contact{/*The style of tell and mail*/
+    text-align: right;
+}
+p img{
+    width: 200px;
+    height: 200px;
+}

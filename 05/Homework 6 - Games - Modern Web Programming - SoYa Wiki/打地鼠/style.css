@@ -1,0 +1,126 @@
+body{
+    font-family: "Century Gothic";
+}
+
+p{
+    font-size: 11pt;
+
+}
+
+h1{
+    font-weight: bold;
+    font-size: 15pt;
+    text-align: center;
+}
+
+ol{
+    width: 450px;
+    margin-top: 0px;
+}
+
+ol li,h2{
+    font-size: 8pt;
+    text-align: left;
+}
+
+
+#game{
+    width: 555px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#output{
+    width: 250px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.box{
+    border: 1px;
+    border-style: solid;
+    border-color: #EEEEEE;
+    font-size: 7pt;
+}
+
+#button{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 115px;
+    height: 14px;
+    font-size: 7pt;
+    padding: 2px 5px 2px 5px;
+    background-color: white;
+    line-height: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 0px  #EEEEEE;
+}
+
+#time{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 75px;
+    height: 14px;
+}
+
+#showTime{
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    width: 25px;
+    height: 14px;
+}
+
+#gameState{
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    width: 95px;
+    height: 14px;
+}
+
+#score{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 80px;
+    height: 14px;
+}
+
+#showScore{
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    width: 25px;
+    height: 14px;
+}
+
+#playArea{
+    margin-top: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 210px;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 2px 0px 2px 0px;
+    border-style: solid;
+    border-color: #EEEEEE;
+}
+
+ul {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+ul li{
+    list-style: none;
+}
+
+input{
+    background-color: white;
+}

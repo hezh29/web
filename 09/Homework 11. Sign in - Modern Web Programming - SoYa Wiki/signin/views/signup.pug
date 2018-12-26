@@ -1,0 +1,50 @@
+extends layout
+
+block content
+    div
+        div
+            h1 用户注册
+            form(method="post")
+                div.username
+                    label(for="username") 用户名
+                    input(id="username" name="username" value=user.username)
+                    span.error
+
+                div.password
+                    label(for="password") 密码
+                    input(id="password" name="password" value=user.password type='password')
+                    span.error
+
+                div.repeatPassword
+                    label(for="repeatPassword") 重复密码
+                    input(id="repeatPassword" name="repeatPassword" value=user['repeatPassword'] type='password')
+                    span.error
+
+                div.sid
+                    label(for="sid") 学号
+                    input(id="sid" name="sid" value=user.sid)
+                    span.error
+
+                div.phone
+                    label(for="phone") 电话
+                    input(id="phone" name="phone" value=user.phone)
+                    span.error
+
+                div.email
+                    label(for="email") 邮箱
+                    input(id="email" name="email" value=user.email)
+                    span.error
+
+                div.buttons
+                    input.button.reset(type="reset" value = "清除")
+                    input.button.submit(type="submit" value = "注册")
+                    a.switch(href="/signin") 登陆
+        
+        if error
+            div.errorBox
+                p!= error
+
+block cssAndJs                
+    script(type="text/javascript" src="/javascripts/signup.js")
+    script(type="text/javascript" src="/javascripts/validator.js")
+    link(rel='stylesheet', href='/stylesheets/signupStyle.css')

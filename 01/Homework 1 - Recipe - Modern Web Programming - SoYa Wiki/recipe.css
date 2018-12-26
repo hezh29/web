@@ -1,0 +1,49 @@
+/*Name：何泽豪 下午12组*/
+/*All five of the extra features have been completed*/
+/*Cascading Style Sheets for pie.html*/
+body{
+    background: white url("img/silverware.jpg") repeat;
+    background-attachment: fixed;/*fix the background image*/
+}
+h1 {
+    color: #A4A400;
+    background: #F0F0F0;
+    font-family: "Century Gothic", "Futura", Verdana, sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 22pt;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+h2 {
+    color: #A4A400;
+    background: #F0F0F0;
+    font-family: "Century Gothic", "Futura", Verdana, sans-serif;
+    text-decoration: underline;
+    font-size: 18pt;
+    font-weight: normal;
+    letter-spacing: 0.2em;
+}
+p, ul, ol {
+    color:  #404040;
+    font-family: Georgia, Garamond, serif;
+    font-size: 11pt;
+}
+a{
+    color: #A4A400;
+}
+#p1{/* The style of the quotations from the users */
+    font-style: italic;
+    background: #FFFFC8;
+}
+#p2{/* The style of the quotations from the users */
+    font-style: italic;
+    background: #FFFFC8;
+}
+ul li{  
+    list-style-type: none;  
+    list-style-image: url("img/pie_icon.gif");  
+    }  
+a img{/*Remove the border*/
+    border-style: none;
+}

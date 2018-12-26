@@ -1,0 +1,41 @@
+doctype html
+html
+    head 
+        title 注册
+        meta(charset="UTF-8")
+        link(rel="stylesheet" href="signupStyle.css" type="text/css")
+        script(type="text/javascript" src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js")
+        script(type="text/javascript" src="signup.js")
+        script(type="text/javascript" src="validator.js")
+    body
+        div
+            div
+                h1 用户注册
+                form(method="post")
+                    div.username
+                        label(for="username") 用户名
+                        input(id="username" name="username" value=user.username)
+                        span.error
+
+                    div.sid
+                        label(for="sid") 学号
+                        input(id="sid" name="sid" value=user.sid)
+                        span.error
+
+                    div.phone
+                        label(for="phone") 电话
+                        input(id="phone" name="phone" value=user.phone)
+                        span.error
+
+                    div.email
+                        label(for="email") 邮箱
+                        input(id="email" name="email" value=user.email)
+                        span.error
+
+                    div.buttons
+                        input.button.reset(type="reset" value = "清除")
+                        input.button.submit(type="submit" value = "提交")
+            
+            if error
+                div.errorBox
+                    p!= error
